@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCart"
+    android:background="#ffffff" >
+
+      
+    <RelativeLayout 
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/title_bg"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical"
+    >
+    
+    <Button 
+        android:id="@+id/returns"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/product_details"
+        android:text="返回"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="购物车"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/redact"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/returns"
+        android:layout_alignBottom="@+id/returns"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/login"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+
+    <ListView 
+        android:id="@+id/shopping_cart_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:divider="#DBDFEC"
+        android:dividerHeight="2dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="70dp"
+        />
+    
+    <ListView android:id="@+id/shopping_cart_listviewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:divider="#DBDFEC"
+        android:dividerHeight="2dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="70dp"/>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:background="#737573"
+    >
+
+    <TextView 
+        android:id="@+id/original"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:hint="原价：XXXX"
+        android:gravity="bottom"
+        />
+
+    <Button
+        android:id="@+id/red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/red_btn"
+        android:text="   购买     "
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/vip"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/red_btn"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="0dp"
+        android:paddingBottom="3dp"
+        android:textColor="#ffffff"
+        android:hint="会员价：XXXX"
+        android:textSize="30dp"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>
+
+</RelativeLayout>

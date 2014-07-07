@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tupianfengzhuang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	
+	<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	<uses-feature android:name="android.hardware.camera" />  
+	<uses-feature android:name="android.hardware.camera.autofocus" /> 
+    
+
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="CfluU8FacC0thCm7kr1GLqLX" />
+
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.GreetActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.DebarkActivity"
+            android:label="@string/title_activity_deng_lu"
+            android:theme="@style/test" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.MainActivity"
+            android:label="@string/title_activity_greet"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.tupianfengzhuang.ShiyanActivity"
+            android:label="@string/title_activity_shiyan" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.ShopActivity"
+            android:label="@string/title_activity_shop" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.MerchandiseActivity"
+            android:label="@string/title_activity_merchandise" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.ProductDetailsActivity"
+            android:label="@string/title_activity_product_details"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.PackingActivity"
+            android:label="@string/title_activity_packing"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.ShoppingCart"
+            android:label="@string/title_activity_shopping_cart"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.Redact"
+            android:label="@string/title_activity_redact" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.Customer"
+            android:label="@string/title_activity_customer"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.OneCust"
+            android:label="@string/title_activity_one_cust"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.Affirm"
+            android:label="@string/title_activity_affirm"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.SubmitOrder"
+            android:label="@string/title_activity_submit_order"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.OrderRecAcivity"
+            android:label="@string/title_activity_order_rec_acivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.StoresActivity"
+            android:label="@string/title_activity_store"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.MapActivity"
+            android:label="@string/title_activity_map"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.ServiceDetailsActivity"
+            android:label="@string/title_activity_service_details"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.SubmitActivity"
+            android:label="@string/title_activity_submit"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.SeekDetailsActivity"
+            android:label="@string/title_activity_seek_details"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.imcore.tupianfengzhuang.ui.EditActivity"
+            android:label="@string/title_activity_edit" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+	            android:name="com.google.zxing.ui.CaptureActivity"
+	            android:configChanges="keyboardHidden|orientation"
+	            android:screenOrientation="landscape"
+	            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+	            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+		   android:name="cn.sharesdk.framework.ShareSDKUIShell"
+		   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		   android:configChanges="keyboardHidden|orientation|screenSize"
+		   android:screenOrientation="portrait"
+		   android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+		   android:name=".wxapi.WXEntryActivity"
+		   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		   android:configChanges="keyboardHidden|orientation|screenSize"
+		   android:exported="true"
+		   android:screenOrientation="portrait" />
+        <activity
+		   android:name=".yxapi.YXEntryActivity"
+		   android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		   android:configChanges="keyboardHidden|orientation|screenSize"
+		   android:exported="true"
+		   android:screenOrientation="portrait" />
+        
+    </application>
+
+</manifest>

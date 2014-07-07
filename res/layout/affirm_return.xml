@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <RelativeLayout 
+        android:id="@+id/noreda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    
+        >
+    
+    <ImageView
+        android:id="@+id/affirm_image"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/affirm_money"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/affirm_image"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/affirm_image"
+        android:textColor="#B88838"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/affirm_js"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/affirm_money"
+        android:layout_alignBottom="@+id/affirm_money"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:gravity="center_vertical"
+        android:hint="攻击键"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/affirm_ks"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/affirm_js"
+        android:layout_alignLeft="@+id/affirm_money"
+        android:layout_marginBottom="24dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:hint="运明天下"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/affirm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/affirm_ks"
+        android:layout_alignTop="@+id/affirm_image"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:hint="运明天下"
+        android:singleLine="true"
+        android:textColor="#B88838"
+        android:textSize="20dp" />
+
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

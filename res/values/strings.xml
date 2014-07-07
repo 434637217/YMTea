@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">芸茗茶叶</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_deng_lu">芸茗茶叶</string>
+    <string name="title_activity_greet">GreetActivity</string>
+    <string name="title_activity_shiyan">ShiyanActivity</string>
+    <string name="title_activity_shop">商品分类</string>
+    <string name="title_activity_merchandise">MerchandiseActivity</string>
+
+    <array name="stor_name">
+        <item>按价格升序排列</item>
+        <item>按价格降序排列</item>
+        <item>按上架时间升序排列</item>
+        <item>按上架时间降序排列</item>
+        <item>按销量降序排列</item>
+        <item>按收藏降序排列</item>
+    </array>
+
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+    <string name="title_activity_packing">PackingActivity</string>
+    <string name="title_activity_shopping_cart">ShoppingCart</string>
+    <string name="title_activity_redact">Redact</string>
+    <string name="title_activity_customer">Customer</string>
+    <string name="title_activity_one_cust">OneCust</string>
+    <string name="title_activity_affirm">Affirm</string>
+    <string name="title_activity_submit_order">SubmitOrder</string>
+    <string name="title_activity_order_rec_acivity">OrderRecAcivity</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_service_details">ServiceDetailsActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_submit">SubmitActivity</string>
+    <string name="title_activity_seek_details">SeekDetailsActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+
+    <string-array name="choose_img_items">
+		<item >拍照</item>    
+		<item >选择图片</item>  
+    
+</string-array>
+</resources>

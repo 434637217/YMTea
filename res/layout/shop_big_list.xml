@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp" >
+    
+    <ImageView 
+        android:id="@+id/shop_big_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/no_picture"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/shop_big_imageview"
+        android:layout_alignLeft="@+id/shop_big_name"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="￥"
+        android:textColor="#BE975E"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shop_big_cost"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/money"
+        android:layout_alignBottom="@+id/money"
+        android:layout_alignRight="@+id/shop_big_name"
+        android:gravity="left"
+        android:hint="价格"
+        android:textColor="#BE975E"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shop_big_collect"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/shop_big_cost"
+        android:layout_alignBottom="@+id/shop_big_cost"
+        android:layout_alignLeft="@+id/shop_big_sales"
+        android:gravity="left"
+        android:hint="collect"
+        android:textColor="#9A9A9A"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shoucang"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/shop_big_collect"
+        android:layout_alignBottom="@+id/shop_big_collect"
+        android:layout_toLeftOf="@+id/shop_big_collect"
+        android:text="收藏:"
+        android:textColor="#9A9A9A"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shop_big_name"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:hint="name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/xiaoliang"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/shop_big_name"
+        android:layout_alignBottom="@+id/shop_big_name"
+        android:layout_toLeftOf="@+id/shop_big_collect"
+        android:text="销量:"
+        android:textColor="#9A9A9A"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shop_big_sales"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/xiaoliang"
+        android:layout_alignBottom="@+id/xiaoliang"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:gravity="left"
+        android:hint="sales"
+        android:textColor="#9A9A9A"
+        android:textSize="20dp" />
+
+</RelativeLayout>

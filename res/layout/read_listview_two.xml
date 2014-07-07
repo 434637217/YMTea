@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+    
+ <RelativeLayout 
+        android:id="@+id/reda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:gravity="center_vertical"
+	    android:paddingRight="5dp"
+	    android:paddingLeft="10dp"
+        >
+    
+    <ImageView
+        android:id="@+id/shoppping_cart_image_redact"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/shopping_cart_x_name_redact"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/shopping_cart_d_name_redact"
+        android:layout_below="@+id/shopping_cart_d_name_redact"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:hint="运明天下"
+        android:textColor="#988070"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/shopping_cart_name_redact"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/shopping_cart_x_name_redact"
+        android:layout_alignLeft="@+id/shopping_cart_x_name_redact"
+        android:layout_marginTop="10dp"
+        android:textColor="#B88838"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/shopping_cart_d_name_redact"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/shoppping_cart_image_redact"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/shoppping_cart_image_redact"
+        android:gravity="center_vertical"
+        android:hint="运明天下"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    
+    <Button 
+            android:id="@+id/delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/delete"
+            />
+    
+    <RelativeLayout 
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="#706868"
+        android:layout_alignParentRight="true"
+        >
+        <Button 
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/redact_add"
+            />
+        
+        <TextView 
+            android:id="@+id/shu"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="#706868"
+            android:gravity="center"
+            android:layout_centerInParent ="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:hint="15"
+            />
+        <Button 
+            android:id="@+id/minus"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/redact_minus"
+            android:layout_alignParentBottom="true"
+            />
+        
+        
+        
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

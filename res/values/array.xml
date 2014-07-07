@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name = "stor_name">
+        <item>按价格升序排列</item>
+        <item>按价格降序排列</item>
+        <item>按上架时间升序排列</item>
+        <item>按上架时间降序排列</item>
+        <item>按销量降序排列</item>
+        <item>按收藏降序排列</item>
+    </array>
+</resources>

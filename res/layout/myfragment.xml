@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E8D8">
+
+    <TextView 
+        android:id="@+id/myfragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg"
+        android:text="我的"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/myfragment_imView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/myfragment_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/myfragment_rex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myfragment_imView"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/myfragment_imView"
+        android:hint="Rex"
+        android:textColor="#C09048"
+        android:textSize="20dp" 
+        />
+
+    <TextView
+        android:id="@+id/myfragment_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myfragment_integral"
+        android:layout_alignLeft="@+id/myfragment_rex"
+        android:layout_marginBottom="21dp"
+        android:hint="等级:名仕"
+        android:textSize="20dp" 
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/myfragment_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myfragment_imView"
+        android:layout_alignLeft="@+id/myfragment_grade"
+        android:hint="积分:null"
+        android:textSize="20dp" 
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/myfragment_compile"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/myfragment_integral"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/edit" />
+
+    <RelativeLayout
+        android:id="@+id/ry"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/myfragment" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        
+        <RelativeLayout
+            android:id="@+id/indent"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+             >
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mine_orderlist"
+                android:layout_centerVertical ="true" />
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/chevron"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/im"
+                android:gravity="center_vertical"
+                android:text=" 订单记录"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/fg"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8E8E8"
+            android:layout_below="@id/indent"
+            />
+        
+         <RelativeLayout
+            android:id="@+id/my_collect"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/fg"
+             >
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mine_favorite"
+                android:layout_centerVertical ="true" />
+
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/chevron"
+                
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/im"
+                android:gravity="center_vertical"
+                android:text=" 收藏夹"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        
+          <TextView 
+            android:id="@+id/fg2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8E8E8"
+            android:layout_below="@id/my_collect"
+            />
+          
+         <RelativeLayout
+            android:id="@+id/my_cshopp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/fg2"
+             >
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mine_favorite"
+                android:layout_centerVertical ="true" />
+
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/chevron"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/im"
+                android:gravity="center_vertical"
+                android:text=" 购物车"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+     <RelativeLayout
+            android:id="@+id/my_push"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/ry"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/myfragment" 
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+             >
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mine_push_notification"
+                android:layout_centerVertical ="true" />
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/chevron"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/im"
+                android:gravity="center_vertical"
+                android:text=" 消息推送"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    
+</RelativeLayout>

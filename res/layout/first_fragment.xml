@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E8D8" >
+
+    <LinearLayout
+        android:id="@+id/ry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:id="@+id/jy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_selector" 
+			>
+			
+            <Button 
+                android:id="@+id/first_seek"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/seek"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                />
+              <LinearLayout
+	        android:layout_width="0px"
+	        android:layout_height="0px"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:layout_alignParentTop="true"
+	        />
+            <EditText 
+                android:id="@+id/first_eidtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf ="@id/first_seek"
+                android:hint="请输入产品关键字"
+				android:background="#ffffff"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                />
+            
+        
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ry"
+        android:orientation="vertical" >
+
+        <!-- ViewPager是一个控件 -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adv_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adv_pager"
+            android:layout_marginTop="-25px"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1" >
+
+        <TextView
+            android:id="@+id/soy"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#BFBFBF" />
+
+        <TextView
+            android:id="@+id/soy2"
+            android:layout_width="1dp"
+            android:layout_height="220dp"
+            android:layout_below="@id/soy"
+            android:layout_centerHorizontal="true"
+            android:background="#999999" />
+
+        <ImageButton
+            android:id="@+id/xpss"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/soy"
+            android:layout_toLeftOf="@id/soy2"
+            android:background="@drawable/home_new_arrival_normal" />
+
+        <ImageButton
+            android:id="@+id/rxph"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/soy"
+            android:layout_toRightOf="@id/soy2"
+            android:background="@drawable/home_top_sellers_normal" />
+
+        <ImageButton
+            android:id="@+id/cyzx"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/xpss"
+            android:layout_toLeftOf="@id/soy2"
+            android:background="@drawable/home_tea_info_normal" />
+
+        <ImageButton
+            android:id="@+id/lxmd"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rxph"
+            android:layout_toRightOf="@id/soy2"
+            android:background="@drawable/home_contact_store_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+    </RelativeLayout>
+
+</RelativeLayout>

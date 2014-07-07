@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".PackingActivity" >
+
+    
+    <RelativeLayout 
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/title_bg"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical"
+    >
+    
+    <Button 
+        android:id="@+id/returns"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/product_details"
+        android:text="返回"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="选择包装"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+<ScrollView 
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:scrollbarStyle="outsideOverlay"
+        >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+<Gallery 
+    android:id="@+id/gally"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="#E7EBDE"
+    android:spacing="40px"
+    />
+
+<RelativeLayout 
+    android:id="@+id/shopdetail"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_below="@id/gally"
+    >
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:text="选择包装"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <Gallery
+        android:id="@+id/galleryTwo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/shop_name"
+        android:background="#ffffff"
+        android:spacing="40px" />
+
+</RelativeLayout>
+
+<TextView 
+    android:id="@+id/fg1"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/shopdetail"
+    android:background="#EFEFEF"
+    />
+
+<RelativeLayout
+    android:id="@+id/pack"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_below="@id/fg1" >
+
+    <TextView
+        android:id="@+id/packname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="重量"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:hint="款"
+        android:textColor="#9C9A9C"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+
+<TextView 
+    android:id="@+id/fg2"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/pack"
+    android:background="#EFEFEF"
+    />
+
+<RelativeLayout
+    android:id="@+id/comment"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:layout_below="@id/fg2" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:text="规格"
+        android:textSize="20dp" 
+        android:textColor="#000000"/>
+
+
+</RelativeLayout>
+
+<TextView 
+    android:id="@+id/fg3"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/comment"
+    android:background="#EFEFEF"
+    />
+<RelativeLayout 
+    android:id="@+id/merchandisenews"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_below="@id/fg3"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:text="包装"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/bz"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:hint="bz"/>
+</RelativeLayout>
+
+<TextView 
+    android:id="@+id/fg4"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/merchandisenews"
+    android:background="#EFEFEF"
+    />
+
+<RelativeLayout 
+    android:id="@+id/jg"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_below="@id/fg4"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:text="价格"
+        android:textSize="20dp" 
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:hint="bz"
+        android:textColor="#BD8A39"/>
+</RelativeLayout>
+
+<TextView 
+    android:id="@+id/fg5"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/jg"
+    android:background="#EFEFEF"
+    />
+
+<RelativeLayout 
+    android:layout_below="@id/fg5"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    ></RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:background="#737573"
+    >
+
+    <Button
+        android:id="@+id/recommend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/collectt"
+        android:background="@drawable/recommend" />
+
+    <Button
+        android:id="@+id/coment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/comment" />
+
+    <Button
+        android:id="@+id/collectt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/coment"
+        android:background="@drawable/collectt" />
+
+    <Button
+        android:id="@+id/red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/red_btn"
+        android:text="加入购物车"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+
+</RelativeLayout>

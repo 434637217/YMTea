@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout 
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/title_bg"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical"
+    >
+    
+    <Button 
+        android:id="@+id/returns"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/product_details"
+        android:text="返回"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="评论详情"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+
+    <ListView 
+        android:id="@+id/comment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:dividerHeight="2dp"
+        android:divider="#E0E0E0"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+		android:layout_alignParentBottom="true"  
+		android:gravity="center_vertical"   
+		android:background="#737573"   
+        >
+        
+        <EditText 
+            android:id="@+id/comment_eidttext"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff"
+            />
+        
+        <Button
+        android:id="@+id/commentt_tj"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/red_btn"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+
+   <RelativeLayout 
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/title_bg"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical"
+    >
+    
+    <Button 
+        android:id="@+id/affirm_returns"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/product_details"
+        android:text="返回"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="确认订单"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+
+   
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/title"
+       >
+  
+      <TextView 
+          android:id="@+id/one_cust_name"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:textSize="20dp"
+          android:textColor="#000000"
+          android:gravity="center_vertical"
+          android:text="商品信息"
+          android:paddingLeft="20dp"
+          />
+      
+       <RelativeLayout 
+       android:id="@+id/jy"
+       android:layout_width="match_parent"
+       android:layout_height="350dp"
+       android:layout_below="@id/one_cust_name"
+       >
+      <ListView 
+          android:id="@+id/affirm_listview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/myfragment" 
+          android:divider="#D0D0D0"
+          android:dividerHeight="2dp"
+          />
+      
+      </RelativeLayout>
+      
+       <TextView 
+          android:id="@+id/affirm_cust"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/myfragment" 
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/jy"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:textSize="20dp"
+          android:gravity="center_vertical"
+          android:hint="XXXXX"
+          />
+       
+       </RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:background="#737573"
+    >
+
+    <TextView 
+        android:id="@+id/affirm_original"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:hint="原价：XXXX"
+        android:gravity="bottom"
+        />
+
+    <Button
+        android:id="@+id/affirm_red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/red_btn"
+        android:text="提交 "
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/affirm_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/affirm_original"
+        android:gravity="center_vertical"
+        android:hint="会员价：XXXX"
+        android:paddingBottom="3dp"
+        android:paddingLeft="0dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+</RelativeLayout>
+       
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="排序"/>
+    
+    <item 
+        android:id="@+id/menu_search"  
+        android:showAsAction="always"
+        android:orderInCategory="101"  
+        android:title="筛选"
+        />
+      <item 
+        android:id="@+id/line"  
+        android:showAsAction="always"  
+        android:orderInCategory="102"
+        android:title="垂直显示"
+        />
+     <item 
+        android:id="@+id/grid"  
+        android:showAsAction="always" 
+        android:orderInCategory="103" 
+        android:title="网格显示"
+        />
+      
+
+     
+</menu>
